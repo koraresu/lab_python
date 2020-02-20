@@ -28,15 +28,3 @@ def check_bracket(string_):
 				stack.pop()
 				valid += 2
 	return valid
-
-def testing(fn, result):
-	try:
-		assert fn == result
-		print("Pass",fn, result)
-	except AssertionError:
-		print("Error", fn, result)
-testing(check_bracket('(()[]'), 4)
-testing(check_bracket(')()())'), 4)
-testing(check_bracket(')()())'), 4)
-testing(check_bracket(')()())))'), 4)
-testing(check_bracket('(((())))))))))))))))))'), 8)
