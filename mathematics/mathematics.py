@@ -23,3 +23,4 @@ def fib_array(n):
 	for i in range(3,n):
 		a.append(a[-2]+a[-1])
 	return a
+
