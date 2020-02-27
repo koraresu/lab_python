@@ -1,6 +1,6 @@
 from find_missing_number import missing_number_in_array
 from find_missing_element import find_missing_set, find_missing_loop
-from sort_problem import bubble_sort
+from sort_problem import bubble_sort,merge_sort
 from find_first_duplicate import first_duplicate
 from sorted_squared_array import sorted_squared_array
 
@@ -17,6 +17,10 @@ def test_find_missing_element():
 
 def test_bubble_sort():
 	assert bubble_sort([1,9,5,2,6,8,3,4]) == [1, 2, 3, 4, 5, 6, 8, 9]
+
+def test_merge_sort():
+	assert merge_sort([6, 5, 3, 1, 8, 7, 2, 4, 9]) == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+	assert merge_sort([1,2,-1,0,9,65,7,3,4,1,2]) == [-1,0,1,1,2,2,3,4,7,9,65]
 
 def test_find_first_duplicate():
 	assert first_duplicate([i for i in range(0,11)] + [10]) == [10]
