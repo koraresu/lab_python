@@ -1,9 +1,15 @@
 # Interview Code
 Setting all my code interview questions in a repo.
-[![Build Status](https://travis-ci.org/koraresu/lab_python.svg?branch=master)](https://travis-ci.org/koraresu/lab_python)
+
+| Master  | Dev  |
+|---------|------|
+|[![Build Status](https://travis-ci.org/koraresu/lab_python.svg?branch=master)](https://travis-ci.org/koraresu/lab_python)|[![Build Status](https://travis-ci.org/koraresu/lab_python.svg?branch=dev)](https://travis-ci.org/koraresu/lab_python)|
 
 ## Array
-
+### Find Missing Element
+Get two array and return the missing element. 
+### Find Missing Number
+Get two array and return the missing number.
 ## Mathematics
 ### Prime
 Get if a number is a prime number.

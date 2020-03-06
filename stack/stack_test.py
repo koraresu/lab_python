@@ -1,5 +1,15 @@
+from parenthesis import check_bracket
 from tail import get_tail
 import os
+
+def test_checking():
+	assert check_bracket('(()') == 2
+	assert check_bracket(')()())') == 4
+	assert check_bracket(')()())') ==  4
+	assert check_bracket(')()())))') == 4
+	assert check_bracket('(((())))))))))))))))))') == 8
+
+
 
 file = (os.path.dirname(__file__))+'/pokemon_data.csv'
 
