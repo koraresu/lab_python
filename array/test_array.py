@@ -3,6 +3,8 @@ from find_missing_element import find_missing_set, find_missing_loop
 from sort_problem import bubble_sort,merge_sort
 from find_first_duplicate import first_duplicate
 from sorted_squared_array import sorted_squared_array
+from no_repeating import rotate_array_manually,rotate_array
+from no_repeating import first_not_repeating_table,first_not_repeating
 
 def test_missing_number_in_array():
 	assert missing_number_in_array([1,2,3,4,6],6) == 5
@@ -31,3 +33,11 @@ def test_find_first_duplicate():
 
 def test_find_first_duplicate():
 	assert sorted_squared_array([-6, -4, 1, 2, 3, 5]) == [1, 4, 9, 16, 25, 36]
+
+def test_rotate_array():
+	assert rotate_array_manually([[1,2,3],[4,5,6],[7,8,9]]) == [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+	assert rotate_array([[1,2,3],[4,5,6],[7,8,9]]) == [(7, 4, 1), (8, 5, 2), (9, 6, 3)]
+
+def test_first_not_repeating():
+	assert first_not_repeating('aaabccc') == 'b'
+	assert first_not_repeating_table ('aaabccc') == 'b'

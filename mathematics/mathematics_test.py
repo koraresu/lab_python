@@ -1,4 +1,4 @@
-from mathematics import prime, fib, fib_array
+from mathematics import prime, fib, fib_array, fib_memo
 from sum import sum_loop, check_nearest
 def test_prime():
 	assert prime(100) == False
@@ -41,3 +41,6 @@ def test_sum():
 def test_check_nearest():
 	assert check_nearest([1,2,3,4,5,6,7,8,9,13], 12) == 13
 	assert check_nearest([1,2,3,4,5,6,7,8,9,11], 12) == 11
+
+def test_fib_memo():
+	assert fib_memo(10,[0]*11) == 55

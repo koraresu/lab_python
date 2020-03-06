@@ -10,6 +10,7 @@ def merge(left, right):
 	result = []
 	i,j = 0,0
 	while i<len(left) and j < len(right):
+		print(left[i],right[j])
 		if left[i] < right[j]:
 			result.append(left[i])
 			i += 1
@@ -29,3 +30,4 @@ def merge_sort(lst):
 		return merge(left, right)
 
 
+print(merge_sort([6, 5, 3, 1, 8, 7, 2, 4, 9]))
