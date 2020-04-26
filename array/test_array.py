@@ -5,6 +5,7 @@ from find_first_duplicate import first_duplicate
 from sorted_squared_array import sorted_squared_array
 from no_repeating import rotate_array_manually,rotate_array
 from no_repeating import first_not_repeating_table,first_not_repeating
+from sort_priority import sort_strings_priority
 
 def test_missing_number_in_array():
 	assert missing_number_in_array([1,2,3,4,6],6) == 5
@@ -41,3 +42,8 @@ def test_rotate_array():
 def test_first_not_repeating():
 	assert first_not_repeating('aaabccc') == 'b'
 	assert first_not_repeating_table ('aaabccc') == 'b'
+
+def test_sort_priority():
+	list_ = [('Tom',10,80),('John',12,79),('Jon',12,80),('Jon',13,79),('Jon',13,80)]
+
+	assert sort_strings_priority(list_) == [('John', 12, 79), ('Jon', 12, 80), ('Jon', 13, 79), ('Jon', 13, 80), ('Tom', 10, 80)]

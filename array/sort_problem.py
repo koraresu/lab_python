@@ -28,6 +28,3 @@ def merge_sort(lst):
 		left = merge_sort(lst[:mid])
 		right = merge_sort(lst[mid:])
 		return merge(left, right)
-
-
-print(merge_sort([6, 5, 3, 1, 8, 7, 2, 4, 9]))
